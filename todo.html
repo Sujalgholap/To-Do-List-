@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        .task{
+            height: 2rem;
+            width: 50%;
+            box-shadow: 0px 10px 10px black;
+            margin-bottom: 2rem;
+            border-radius: 20px;
+        }
+        .add{
+            height: 50px;
+            width: 80px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Todo app</h1>
+        <input type="text" class="task" placeholder="enter the task">
+        <button class="add">Add Task</button>
+        <div class="todo_box">
+            <ul>
+                <li>1st task <button class="delete">completed</button></li>
+                <li>2nd task<button class="delete">completed</button></li>
+            </ul>
+        </div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
